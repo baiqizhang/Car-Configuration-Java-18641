@@ -1,0 +1,13 @@
+Hello TA!
+
+To run the program, please import the project into Eclipse, and run the main 
+method in Driver.java. There are basic documentation in the form of comments
+in each class.
+
+The testing mechanism is enabled by JUnit. To run the test, please add JUnit
+to the build path, then run TestClass.java as JUnit Test.
+
+The Class Diagram is diagram.jpg. The input file is "input".
+
+Thanks!
+Baiqi 
