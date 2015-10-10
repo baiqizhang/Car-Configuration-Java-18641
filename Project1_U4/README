@@ -1,0 +1,14 @@
+Hello TA!
+
+For grading convenience, in this project I merged the client and server pack
+age into a single package called network. The driver program for both server
+ and client are all in the driver package.
+
+To run the program, please import the project into Eclipse, and run the main 
+method in Driver.java. There are basic documentation in the form of comments
+in each class.
+
+The Class Diagram is diagram.jpg. The input file is "input" and "input2". 
+
+Thanks!
+Baiqi 
