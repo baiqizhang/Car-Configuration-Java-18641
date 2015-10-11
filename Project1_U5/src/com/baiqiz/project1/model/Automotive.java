@@ -148,7 +148,7 @@ public class Automotive implements Serializable{
 	public synchronized String getOptionName(int optionSetIndex,int optionIndex) throws AutoException {
 		if (optionSetIndex>=optionSet.size())
 			throw new AutoException(AutoException.MISSINGOPTIONSET);
-		OptionSet optionSet = this.optionSet.get(optionIndex);
+		OptionSet optionSet = this.optionSet.get(optionSetIndex);
 		return optionSet.getOption(optionIndex).getName();
 	}
 

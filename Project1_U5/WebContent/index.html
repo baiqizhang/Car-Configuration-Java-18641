@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment2 baiqiz</title>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+  <body>
+    <form action="QueryServlet" method="GET">
+    Query:
+    <select name="id" id="sel">
+      <option value="1">1. Given author name A, list all of her co-authors.</option>
+      <option value="2">2. Given an exact paper name, list its publication details.</option>
+      <option value="3">3. Given an author name, list all of her publications 
+                        and detailed publication information</option>
+      <option value="4">4. Given some keywords, list all publications that contain
+                        some or all of the keywords in the paper title.</option>
+      <option value="5">5. Given two author names, find out whether they ever co-author 
+                        some papers and if yes, the details.</option>
+    </select>
+    <div id="arg1">
+      <br>Argument 1: <input type="text" name="arg1" id="arg1t"><br>
+    </div>
+    <div id="arg2">
+      Argument 2: <input type="text" name="arg2" id="arg2t"/><br>
+    </div>
+    <input type="submit" value="Submit" />
+    </form>
+    
+    <script>
+      $('#arg2').hide();
+      $("#sel").change(function() {
+        var name = $('#sel').find(":selected").text();
+        if (name[0]=='1')
+        	$('#arg1t').val("Yiwei Jiang");
+        if (name[0]=='2')
+        	$('#arg1t').val("On Counting and Approximation.");
+        if (name[0]=='3')
+        	$('#arg1t').val("Yiwei Jiang");
+        if (name[0]=='4')
+        	$('#arg1t').val("algorithm");        
+        if (name[0]=='5'){
+          $('#arg1t').val("Yiwei Jiang");
+          $('#arg2t').val("Yong He");
+    	  $('#arg2').show();
+        }else
+          $('#arg2').hide();
+      }).trigger( "change" );
+    </script>
+  </body>
+</html>
