@@ -1,0 +1,20 @@
+Hello TA!
+
+To run the program, please import the project into Eclipse, and run the project
+ in a web server (I used Tomcat v8). There are basic documentation in the form 
+ of comments in each class.
+
+The workflow is as follows: After the browser visits http://localhost:8080/Proj
+ect1_U5/, it will be redirected to Project1_U5/ModelServlet according to web.xm
+l. ModelServlet will generate the content of that webpage, where the user need 
+to pick a selection. Then the form will be posted to Project1_U5/ConfigServlet.
+Finally, after the user make the choice, the form will be posted to Project1_U5
+/ShowResult.jsp which is in the WEB-INF folder. The program read parameters, ge
+t the corresponding model from the LinkedHashMap 
+
+The Class Diagram is diagram.jpg. The input file is "input" and "input2". They 
+are both in the WEB-INF folder. There are also some screen shots in the screensh
+ot folder
+
+Thanks!
+Baiqi 
